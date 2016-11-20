@@ -1,0 +1,30 @@
+$primaryColor: #ecf;
+
+body {
+  $primaryColor: #f9f9f9; 
+  background: $primaryColor;
+}
+.navbar-inverse .navbar-brand {
+    color: #f7f7f7;
+}
+.m-t-10{
+	margin-top: 10px!important;
+}
+.m-b-0{
+	margin-bottom: 0px;
+}
+.m-l-r-5{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.shortPanel{
+	max-width: 320px;
+	margin: 50px auto;
+    padding: 0px 20px;
+}
+
+@media (min-width: 768px){
+	.navbar {
+	    border-radius: 0px;
+	}
+}
