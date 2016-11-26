@@ -1,8 +1,43 @@
-<div class="text-center">
-	<h1>Welcome to Node JS !</h1>
-	<div class="well">
-		<h3>All the best for new coding experience.</h3>
-		<hr/>
-		<i class="glyphicon glyphicon-hand-right"></i> <a href="/add" class="m-l-r-5">Click Here</a> to add new technologies.
-	</div>
+<div class="" align="center" id="nickWrap">
+    <img height="500" width="500" class="img-circle img-responsive" src="public/images/minion.jpg" />
+    <h3 class="text-left">Pick your super awesome nickname</h3>
+    <p id="nickError"></p>
+    <div class="form-group">
+        <form id="setNick" role="form">
+        	<div class="input-group">
+            	<input type="text" class="form-control" placeholder="Your nickname" id="nickname" autofocus required/>
+            	<div class="input-group-addon havingButton"><input class="btn btn-danger" type="submit" value="Submit" /></div>
+        	</div>
+        </form>
+    </div>
 </div>
+<div id="chatWindow">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="shortPanel">
+                <h4>Currently Online</h4>
+                <div id="users"></div>
+            </div>
+            <p class="m-t-10">Invite your friends by sharing this <i class="glyphicon glyphicon-hand-right"></i> <a target="_blank" href="https://awesome-socket-io.herokuapp.com/">link</a></p>
+        </div>
+        <div class="col-sm-6">
+            <div id="contentWrap">
+                <div id="chatWrap">
+                    <div id="chat"></div>
+                </div>
+            </div>
+        </div>
+            <div class="col-sm-12">
+            <form id="message-box">
+                <textarea class="form-control chatTextarea m-t-10" id="message" placeholder="Write your message and press enter.." required autofocus rows="3" cols="60"></textarea>
+            </form>
+            <div class="alert alert-info">
+                <p align="center">
+                    <strong>Tip :</strong>
+                    Please type <code>@kkk  hello</code> to say 'hello' to 'kkk' privately
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="public/js/combined.js"></script>

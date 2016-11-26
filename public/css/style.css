@@ -1,8 +1,10 @@
 body {
-  background: #f9f9f9; }
+  background-color: #eee; }
 
 .navbar-inverse .navbar-brand {
-  color: #f7f7f7; }
+  color: #f7f7f7;
+  float: none;
+  display: block; }
 
 .m-t-10 {
   margin-top: 10px !important; }
@@ -14,13 +16,57 @@ body {
   margin-left: 5px;
   margin-right: 5px; }
 
+.p-0 {
+  padding: 0px; }
+
+.input-group-addon.havingButton {
+  padding: 0px; }
+  .input-group-addon.havingButton .btn {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .input-group-addon.havingButton:last-child {
+    border: 0px; }
+
 .shortPanel {
-  max-width: 320px;
-  margin: 50px auto;
-  padding: 0px 20px; }
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px; }
+
+#chatWindow {
+  display: none; }
+  #chatWindow #chatWrap {
+    background: url("../images/wood.jpg") no-repeat center center #F0E0B0;
+    border-radius: 4px;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 20px; }
+  #chatWindow #users {
+    height: 200px; }
+    #chatWindow #users ul li {
+      color: limegreen;
+      list-style-type: disc;
+      margin-left: 0px; }
+      #chatWindow #users ul li span {
+        color: #000; }
+  #chatWindow #message-box .chatTextarea {
+    background-color: #ffffe6;
+    border: double 4px orange;
+    border-radius: 4px;
+    margin: 0px auto; }
+
+.whisper {
+  color: #845422;
+  font-style: italic;
+  font-weight: bold; }
+
+.error {
+  color: #800000; }
 
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0px; } }
+@media (max-width: 768px) {
+  #chatWindow #users {
+    height: auto; } }
 
 /*# sourceMappingURL=style.css.map */
